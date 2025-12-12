@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0a192f;
+  --color-navy-light: #112240;
+  --color-slate: #8892b0;
+  --color-slate-light: #ccd6f6;
+  --color-teal: #64ffda;
+  --color-teal-tint: rgba(100, 255, 218, 0.1);
+  --color-white: #e6f1ff;
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
+}
+
+@layer base {
+  body {
+    @apply bg-navy text-slate-light font-sans antialiased leading-relaxed;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold text-white;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-6 sm:px-12;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-32;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded text-teal border border-teal hover:bg-teal-tint transition-all duration-300 font-medium;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded text-white border border-slate hover:border-white hover:bg-white/5 transition-all duration-300 font-medium;
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.15;
+    transform: scale(1.4);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

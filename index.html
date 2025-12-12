@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayne Chibeu | Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Wayne Chibeu, a Full-Stack Developer and creator of InvoiceDeck.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">WC.</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="name">Wayne Chibeu.</h1>
+                <h2 class="tagline">I build production-ready SaaS applications.</h2>
+                <p class="bio">
+                    Full-Stack Developer & Indie Hacker. Creator of <a href="#" class="highlight">InvoiceDeck</a>.
+                    I turn complex problems into elegant, monetizable solutions.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Work</h2>
+                
+                <!-- Flagship Project -->
+                <article class="project-card flagship">
+                    <div class="project-content">
+                        <div class="project-label">Flagship Project</div>
+                        <h3 class="project-title">InvoiceDeck</h3>
+                        <p class="project-description">
+                            A comprehensive invoicing platform for freelancers and small businesses. 
+                            Features recurring invoices, multi-currency support, tax analytics, and a beautiful client portal.
+                            Built with performance and scalability in mind.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>Next.js</li>
+                            <li>TypeScript</li>
+                            <li>Supabase</li>
+                            <li>Stripe</li>
+                            <li>TailwindCSS</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn small-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                            <a href="#" class="btn small-btn secondary-btn"><i class="fa-brands fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <!-- Placeholder for InvoiceDeck screenshot -->
+                        <div class="img-placeholder_flagship">InvoiceDeck UI</div>
+                    </div>
+                </article>
+
+                <div class="project-grid">
+                    <!-- Smaller Project 1 -->
+                    <article class="project-card compact">
+                        <div class="project-header">
+                            <i class="fa-solid fa-folder-open folder-icon"></i>
+                            <div class="project-links-icon">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Portfolio Site</h3>
+                        <p class="project-description">
+                            The site you're looking at right now. Built with vanilla HTML/CSS to demonstrate core web fundamentals and performance optimization.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </article>
+
+                    <!-- Smaller Project 2 -->
+                    <article class="project-card compact">
+                        <div class="project-header">
+                            <i class="fa-solid fa-terminal folder-icon"></i>
+                            <div class="project-links-icon">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">CLI Tool (Concept)</h3>
+                        <p class="project-description">
+                            A command-line interface helper for automating development workflows and scaffolding project structures.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>Node.js</li>
+                            <li>Commander</li>
+                            <li>Chalk</li>
+                        </ul>
+                    </article>
+                    
+                     <!-- Smaller Project 3 -->
+                     <article class="project-card compact">
+                        <div class="project-header">
+                            <i class="fa-solid fa-plug folder-icon"></i>
+                            <div class="project-links-icon">
+                                <a href="#"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">API Wrapper</h3>
+                        <p class="project-description">
+                            A clear and typed wrapper around a popular public API, simplifying integration for other developers.
+                        </p>
+                        <ul class="tech-stack">
+                            <li>TypeScript</li>
+                            <li>Axios</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm Wayne, a passionate software engineer based in [Location]. 
+                            I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
+                        </p>
+                        <p>
+                            My main focus these days is building accesible, inclusive products and digital experiences at <span class="highlight">InvoiceDeck</span>.
+                        </p>
+                        <p>
+                            I prioritize clean code, user experience, and shipping real value. I'm always learning and looking for the next challenge.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+             <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>React / Next.js</li>
+                            <li>TypeScript</li>
+                            <li>Tailwind CSS</li>
+                            <li>HTML5 / CSS3</li>
+                        </ul>
+                    </div>
+                     <div class="skill-category">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Supabase / PostgreSQL</li>
+                            <li>API Design (REST/GraphQL)</li>
+                            <li>Serverless Functions</li>
+                        </ul>
+                    </div>
+                     <div class="skill-category">
+                        <h3>Tools & Others</h3>
+                        <ul>
+                            <li>Git / GitHub</li>
+                            <li>Figma</li>
+                            <li>Vercel / Netlify</li>
+                            <li>Stripe Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+             <div class="container center-text">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-text">
+                    I'm currently looking for new opportunities. Whether you have a question, a freelance project, or just want to say hi, I'll try my best to get back to you!
+                </p>
+                <a href="mailto:wayne@example.com" class="btn primary-btn big-btn">Say Hello</a>
+                
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Designed & Built by Wayne Chibeu. &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
