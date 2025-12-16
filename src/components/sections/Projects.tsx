@@ -89,7 +89,7 @@ export default function Projects() {
                     desc="The site you're looking at right now. Built with Next.js 15, Tailwind, and Framer Motion for premium interactivity."
                     stack={["Next.js", "Framer Motion", "Tailwind"]}
                     github="https://github.com/WayneChibeu/my-portfolio"
-                    external="#"
+                    external="https://waynes-portfolio.vercel.app"
                 />
             </div>
         </section>
