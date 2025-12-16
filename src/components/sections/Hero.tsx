@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import TechPortrait from "../TechPortrait";
 
 export default function Hero() {
     const fadeInUp = {
@@ -20,40 +21,51 @@ export default function Hero() {
 
     return (
         <section id="hero" className="min-h-screen flex items-center justify-center container-custom pt-20">
-            <motion.div
-                variants={staggerContainer}
-                initial="hidden"
-                animate="visible"
-                className="max-w-4xl"
-            >
-                <motion.p variants={fadeInUp} className="text-teal font-medium mb-5 text-lg">
-                    Hi, my name is
-                </motion.p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
+                <motion.div
+                    variants={staggerContainer}
+                    initial="hidden"
+                    animate="visible"
+                    className="max-w-2xl order-2 md:order-1"
+                >
+                    <motion.p variants={fadeInUp} className="text-teal font-medium mb-5 text-lg">
+                        Hi, my name is
+                    </motion.p>
 
-                <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
-                    Wayne Chibeu.
-                </motion.h1>
+                    <motion.h1 variants={fadeInUp} className="text-5xl md:text-7xl font-bold text-white mb-4 leading-tight">
+                        Wayne Chibeu.
+                    </motion.h1>
 
-                <motion.h2 variants={fadeInUp} className="text-4xl md:text-6xl font-bold text-slate mb-8 leading-tight">
-                    I build production-ready SaaS.
-                </motion.h2>
+                    <motion.h2 variants={fadeInUp} className="text-4xl md:text-6xl font-bold text-slate mb-8 leading-tight">
+                        I build production-ready SaaS.
+                    </motion.h2>
 
-                <motion.p variants={fadeInUp} className="text-slate max-w-xl text-lg mb-10 leading-relaxed">
-                    I&apos;m a Full-Stack Developer & Indie Hacker specialized in building accessible,
-                    pixel-perfect web applications. Currently, I&apos;m focused on building{" "}
-                    <span className="text-teal">InvoiceDeck</span> and helping businesses scale
-                    with modern tech stacks.
-                </motion.p>
+                    <motion.p variants={fadeInUp} className="text-slate max-w-xl text-lg mb-10 leading-relaxed">
+                        I&apos;m a Full-Stack Developer & Indie Hacker specialized in building accessible,
+                        pixel-perfect web applications. Currently, I&apos;m focused on building{" "}
+                        <span className="text-teal">InvoiceDeck</span> and helping businesses scale
+                        with modern tech stacks.
+                    </motion.p>
 
-                <motion.div variants={fadeInUp} className="flex gap-4">
-                    <a href="#projects" className="btn-primary">
-                        Check out my work
-                    </a>
-                    <a href="#contact" className="btn-secondary">
-                        Let&apos;s talk
-                    </a>
+                    <motion.div variants={fadeInUp} className="flex gap-4">
+                        <a href="#projects" className="btn-primary">
+                            Check out my work
+                        </a>
+                        <a href="#contact" className="btn-secondary">
+                            Let&apos;s talk
+                        </a>
+                    </motion.div>
                 </motion.div>
-            </motion.div>
+
+                <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8, delay: 0.4 }}
+                    className="order-1 md:order-2 flex justify-center md:justify-end"
+                >
+                    <TechPortrait />
+                </motion.div>
+            </div>
         </section>
     );
 }

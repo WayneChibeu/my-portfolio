@@ -73,23 +73,23 @@ export default function Projects() {
             {/* Other Projects Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <ProjectCard
+                    title="TaskFlow (In Progress)"
+                    desc="A drag-and-drop Kanban task manager with real-time collaboration. Features optimistic UI updates and complex state management."
+                    stack={["Next.js", "dnd-kit", "Zustand", "Supabase"]}
+                    github="#"
+                />
+                <ProjectCard
+                    title="DocuChat AI (In Progress)"
+                    desc="RAG-based document assistant. Upload PDFs and chat with them using semantic search and AI summarization."
+                    stack={["OpenAI", "Pinecone", "LangChain", "Next.js"]}
+                    github="#"
+                />
+                <ProjectCard
                     title="Portfolio V2"
                     desc="The site you're looking at right now. Built with Next.js 15, Tailwind, and Framer Motion for premium interactivity."
                     stack={["Next.js", "Framer Motion", "Tailwind"]}
-                    github="#"
+                    github="https://github.com/WayneChibeu/my-portfolio"
                     external="#"
-                />
-                <ProjectCard
-                    title="CLI Tool (Concept)"
-                    desc="A command-line interface helper for automating development workflows and scaffolding project structures."
-                    stack={["Node.js", "Commander", "Chalk"]}
-                    github="#"
-                />
-                <ProjectCard
-                    title="API Wrapper"
-                    desc="A clear and typed wrapper around a popular public API, simplifying integration for other developers."
-                    stack={["TypeScript", "Axios"]}
-                    github="#"
                 />
             </div>
         </section>

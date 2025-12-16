@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Github, Linkedin, Twitter, Mail } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -74,6 +74,14 @@ export default function Navbar() {
                         transition={{ duration: 0.3 }}
                         className="fixed inset-0 bg-navy-light/95 backdrop-blur-lg flex items-center justify-center md:hidden"
                     >
+                        <button
+                            className="absolute top-6 right-6 text-teal"
+                            onClick={() => setIsOpen(false)}
+                            aria-label="Close menu"
+                        >
+                            <X size={30} />
+                        </button>
+
                         <nav className="flex flex-col gap-8 text-center">
                             {navLinks.map((link) => (
                                 <Link
@@ -93,6 +101,13 @@ export default function Navbar() {
                             >
                                 Resume
                             </a>
+
+                            <div className="flex gap-6 justify-center mt-4">
+                                <a href="https://github.com/WayneChibeu" target="_blank" className="text-slate-light hover:text-teal transition-colors"><Github size={24} /></a>
+                                <a href="https://www.linkedin.com/in/wayne-chibeu-482451278/" target="_blank" className="text-slate-light hover:text-teal transition-colors"><Linkedin size={24} /></a>
+                                <a href="https://x.com/theamateur_tax" target="_blank" className="text-slate-light hover:text-teal transition-colors"><Twitter size={24} /></a>
+                                <a href="mailto:wchibeu4@gmail.com" className="text-slate-light hover:text-teal transition-colors"><Mail size={24} /></a>
+                            </div>
                         </nav>
                     </motion.div>
                 )}

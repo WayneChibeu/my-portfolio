@@ -23,65 +23,43 @@ export default function Skills() {
                 <div className="h-[1px] bg-navy-light flex-grow max-w-xs"></div>
             </motion.div>
 
-            <div className="grid md:grid-cols-3 gap-12 items-start">
-                {/* About Text - Column 1 */}
+            <div className="flex flex-col gap-12">
+                {/* About Text - Full Width */}
                 <motion.div
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                     viewport={{ once: true }}
-                    className="md:col-span-1"
+                    className="max-w-3xl"
                 >
                     <p className="text-slate mb-4 text-base leading-relaxed">
                         I enjoy creating things that live on the internet. My interest in web development started back when I decided to try editing custom Tumblr themes — turns out hacking together HTML & CSS is pretty fun!
                     </p>
-                    <p className="text-slate mb-4 text-base leading-relaxed">
-                        Fast-forward to today, and I&apos;ve had the privilege of building software for a <span className="text-teal">SaaS start-up</span> and collaborating with talented people.
+                    <p className="text-slate text-base leading-relaxed">
+                        Fast-forward to today, and I&apos;m focused on building my own <span className="text-teal">SaaS products</span> like InvoiceDeck and solving real-world problems with code.
                     </p>
                 </motion.div>
 
-                {/* Skill Lists - Column 2 */}
+                {/* Skill Lists - 3 Columns */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     viewport={{ once: true }}
-                    className="md:col-span-1"
+                    className="grid grid-cols-1 md:grid-cols-3 gap-8"
                 >
                     {Object.entries(skills).map(([category, items]) => (
-                        <div key={category} className="mb-6 last:mb-0">
-                            <h3 className="text-white font-bold mb-2 text-sm uppercase tracking-wider">{category}</h3>
-                            <ul className="space-y-1">
+                        <div key={category} className="bg-navy-light p-6 rounded-lg border border-transparent hover:border-teal/30 transition-all duration-300">
+                            <h3 className="text-teal font-bold mb-4 text-sm uppercase tracking-wider">{category}</h3>
+                            <ul className="space-y-2">
                                 {items.map(skill => (
-                                    <li key={skill} className="text-slate text-sm font-mono flex items-center gap-2">
-                                        <span className="text-teal">▹</span> {skill}
+                                    <li key={skill} className="text-slate-light text-sm font-mono flex items-center gap-2">
+                                        <span className="text-teal/50">▹</span> {skill}
                                     </li>
                                 ))}
                             </ul>
                         </div>
                     ))}
-                </motion.div>
-
-                {/* Profile Image - Column 3 */}
-                <motion.div
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    viewport={{ once: true }}
-                    className="md:col-span-1 relative group"
-                >
-                    <div className="relative w-full max-w-[300px] mx-auto md:mx-0">
-                        <div className="absolute inset-0 border-2 border-teal rounded-lg translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
-                        <div className="relative rounded-lg overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-300">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img
-                                src="/profile.png"
-                                alt="Wayne Chibeu"
-                                className="w-full h-auto object-cover"
-                            />
-                            <div className="absolute inset-0 bg-teal/20 group-hover:bg-transparent transition-colors duration-300"></div>
-                        </div>
-                    </div>
                 </motion.div>
             </div>
         </section>
