@@ -33,10 +33,10 @@ export default function Skills() {
                     className="max-w-3xl"
                 >
                     <p className="text-slate mb-4 text-base leading-relaxed">
-                        I enjoy creating things that live on the internet. My interest in web development started back when I decided to try editing custom Tumblr themes — turns out hacking together HTML & CSS is pretty fun!
+                        I&apos;ve been fascinated by technology since I was young. While I studied Civil Engineering at university, my passion for building digital products never faded. In 2025, I received a scholarship to pursue a full-stack development specialization — and I haven&apos;t looked back since.
                     </p>
                     <p className="text-slate text-base leading-relaxed">
-                        Fast-forward to today, and I&apos;m focused on building my own <span className="text-teal">SaaS products</span> like InvoiceDeck and solving real-world problems with code.
+                        Today, I&apos;m focused on building my own <span className="text-teal">SaaS products</span> like InvoiceDeck and solving real-world problems with code.
                     </p>
                 </motion.div>
 
