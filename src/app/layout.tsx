@@ -19,6 +19,11 @@ export const metadata: Metadata = {
   title: "Wayne Chibeu | Full-Stack Developer",
   description: "Portfolio of Wayne Chibeu, a Full-Stack Developer and Indie Hacker building accessible web applications.",
   metadataBase: new URL("https://waynes-portfolio.vercel.app"),
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   openGraph: {
     title: "Wayne Chibeu | Full-Stack Developer",
     description: "Portfolio of Wayne Chibeu, a Full-Stack Developer and Indie Hacker.",
