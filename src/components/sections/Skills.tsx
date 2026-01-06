@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const skills = {
     "Languages": ["TypeScript", "JavaScript (ES6+)", "Kotlin", "Python", "SQL", "HTML5/CSS3"],
     "Frameworks": ["Next.js (App Router)", "React", "Node.js", "TailwindCSS", "Framer Motion"],
-    "Tools & Platforms": ["Git", "Supabase", "Vercel", "Android Studio", "Stripe", "Figma", "PostgreSQL"]
+    "Tools & Platforms": ["Git", "Supabase", "Vercel", "Android Studio", "Paystack", "PostgreSQL"]
 };
 
 export default function Skills() {

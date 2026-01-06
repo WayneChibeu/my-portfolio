@@ -55,7 +55,7 @@ export default function Projects() {
                     <ul className="flex flex-wrap gap-4 justify-end text-slate-light font-mono text-xs mb-8">
                         <li>Next.js</li>
                         <li>Supabase</li>
-                        <li>Stripe</li>
+                        <li>Paystack</li>
                         <li>TailwindCSS</li>
                         <li>PWA</li>
                     </ul>
