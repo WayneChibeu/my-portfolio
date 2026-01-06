@@ -76,7 +76,7 @@ export default function Projects() {
                     title="MusicDeck"
                     desc="A clean, ad-free Android music player. Features background playback, Material 3 design, and album art display using Jetpack Media3."
                     stack={["Kotlin", "Jetpack Media3", "Material 3", "Android"]}
-                    github="https://github.com/WayneChibeu/musicdeck"
+                    github="https://github.com/WayneChibeu/MusicDeck"
                 />
                 <ProjectCard
                     title="DocuChat AI"
