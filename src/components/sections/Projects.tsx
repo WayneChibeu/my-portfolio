@@ -73,10 +73,10 @@ export default function Projects() {
             {/* Other Projects Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <ProjectCard
-                    title="TaskFlow (In Progress)"
-                    desc="A drag-and-drop Kanban task manager with real-time collaboration. Features optimistic UI updates and complex state management."
-                    stack={["Next.js", "dnd-kit", "Zustand", "Supabase"]}
-                    github="#"
+                    title="MusicDeck"
+                    desc="A clean, ad-free Android music player. Features background playback, Material 3 design, and album art display using Jetpack Media3."
+                    stack={["Kotlin", "Jetpack Media3", "Material 3", "Android"]}
+                    github="https://github.com/WayneChibeu/musicdeck"
                 />
                 <ProjectCard
                     title="DocuChat AI"
