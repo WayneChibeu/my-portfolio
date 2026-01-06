@@ -79,10 +79,11 @@ export default function Projects() {
                     github="#"
                 />
                 <ProjectCard
-                    title="DocuChat AI (In Progress)"
+                    title="DocuChat AI"
                     desc="RAG-based document assistant. Upload PDFs and chat with them using semantic search and AI summarization."
                     stack={["OpenAI", "Pinecone", "LangChain", "Next.js"]}
-                    github="#"
+                    github="https://github.com/WayneChibeu/docuchat-ultra"
+                    external="https://docuchat-ultra.vercel.app/"
                 />
                 <ProjectCard
                     title="Portfolio V2"
